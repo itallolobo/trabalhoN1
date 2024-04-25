@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://encheu.com.br">
+    <meta property="og:title" content="Previsões do nível do Rio Doce">
+    <meta property="og:description" content="Uma previsão detalhada do nível do Rio Doce para os próximos dias.">
+    <meta property="og:image" content="previewOG.png">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nivel do Rio Doce</title>
+
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reseter.css/2.0.0/reseter.min.css" integrity="sha512-gCJkkUMGTe73+FMwog6gIBCVJIMXRoc21l6/IPCuzxCex/1sxvO8ctb6Zd4/WWs2UMqmtnDrAdhJht5pEY0LXg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/85188/jquery.wavify.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"
+      integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
+      integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"
+      integrity="sha512-WNZwVebQjhSxEzwbettGuQgWxbpYdoLf7mH+25A7sfQbbxKeS5SQ9QBf97zOY4nOlwtksgDA/czSTmfj4DUEiQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <link rel="stylesheet" href="styleload.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QLWE46MS0X"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-QLWE46MS0X');
+</script>  
+  
+  </head>
+
+  <body>
+    <div class="loader-container">
+      <div class="cardcontainer">
+        <img id="rio" src="rio.png" alt="" />
+        <img id="rulerl" src="rule.svg" alt="" />
+      </div>
+    </div>
+
+    <div class="container-fluid p-0">
+      <div id="r1" class="justify-content-center text-center">
+        <div class="p-0">
+          <img id="ruler" src="./rule.svg" draggable="false" alt="" srcset="" class="d-inline" />
+          <div id="w1d" style="font-size: 0">
+            <svg id="w0svg" version="1.1" xmlns="http://www.w3.org/2000/svg">
+              <path id="w0" d="" />
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <div
+        id="r2"
+        class="justify-content-center text-center"
+        style="margin-top: -3px"
+      >
+        <div class="p-0">
+          <div
+            class="container-fluid text-center p-0 position-relative"
+            style="background-color: #40b3db"
+          >
+            <h2 id="title" class="text-white title">
+              O nível do Rio Doce está <span id="status">normal</span>
+            </h2>
+          </div>
+        </div>
+      </div>
+
+      <div
+        id="r3"
+        class="justify-content-center text-center"
+        style="margin-top: -1px"
+      >
+        <div class="p-0">
+          <div
+            class="container-fluid p-0 position-relative"
+            style="background-color: #319fbc; font-size: 0; margin-top: -3px"
+          >
+            <svg
+              viewBox="2.393 181.995 1437.607 62.166"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill="#40b3db"
+                fill-opacity="1"
+                d="M 0 235.967 L 60 225.267 C 120 214.967 240 192.967 360 198.667 C 480 203.967 600 235.967 720 241.267 C 840 246.967 962.393 236.136 1082.393 225.836 C 1202.393 215.136 1363.08 193.595 1431.058 215.135 L 1440 217.529 L 1440.797 174.027 L 1380.797 174.027 C 1320.797 174.027 1200.797 174.027 1080.797 174.027 C 960.797 174.027 840.797 174.027 720.797 174.027 C 600.797 174.027 480.797 174.027 360.797 174.027 C 240.797 174.027 120.797 174.027 60.797 174.027 L 0.797 174.027 L 0 235.967 Z"
+              />
+            </svg>
+          </div>
+          <div
+            class="container-fluid text-center p-0 position-relative"
+            style="background-color: #319fbc; margin-top: -2px"
+          >
+            <h2 id="content1" class="text-white title content1">
+              O nivel do rio é de 1.42 metros, estando dentro da faixa normal de
+              1 a 2m
+            </h2>
+          </div>
+        </div>
+      </div>
+
+      <div
+        id="r4"
+        class="justify-content-center text-center prevCont"
+        style="margin-top: -4px"
+      >
+        <div class="p-0">
+          <div
+            class="container-fluid p-0 position-relative"
+            style="background-color: #2690a8; font-size: 0; margin-top: -2px"
+          >
+            <svg
+              id="w3"
+              viewBox="0 90.2 1440 229.8"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill="#319fbc"
+                fill-opacity="1"
+                d="M 0 224 L 60 197.3 C 120 171 240 117 360 117.3 C 480 117 600 171 720 176 C 840 181 960 139 1080 138.7 C 1200 139 1320 181 1380 202.7 L 1440 224 L 1440 90.2 L 1380 90.2 C 1320 90.2 1200 90.2 1080 90.2 C 960 90.2 840 90.2 720 90.2 C 600 90.2 480 90.2 360 90.2 C 240 90.2 120 90.2 60 90.2 L 0 90.2 L 0 224 Z"
+              />
+            </svg>
+          </div>
+
+          <div
+            class="container-fluid text-center position-relative p-0"
+            style="background-color: #2690a8; margin-top: -2px"
+          >
+            <h2 id="title2" class="text-white title2">
+              Nenhuma anomalia foi detectada
+            </h2>
+            <h2 id="content2" class="text-white content2 text-center">
+              Ufaa! Nossa AI não previu nenhuma variação anormal no nível do rio
+              para os próximos dias
+            </h2>
+            <div class="accordion border-0 p-0" id="accordionChart">
+              <div class="accordion-item border-0 p-0">
+                <h2 class="accordion-header p-0" id="headingChart">
+                  <button
+                    id="infoBtn"
+                    class="btn btn-outline-info"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseChart"
+                    aria-expanded="true"
+                    aria-controls="collapseChart"
+                  >
+                    Mais Informações
+                  </button>
+                </h2>
+                <div
+                  id="collapseChart"
+                  class="accordion-collapse collapse border-0 p-0"
+                  aria-labelledby="headingChart"
+                  data-bs-parent="#accordionChart"
+                >
+                  <div id="accordion-chart " class="accordion-body">
+                    <div class="container">
+                      <div class="PrevCarousel d-flex justify-content-center">
+                        
+                        <div class="prevCard">
+                          <div class="PrevcardTop PrevcardTop1">
+                            <h3 class="PrevCardHeader PrevCardHeader1">Amanhã</h3>
+                            <h5 class="PrevCardSubHeader PrevCardSubHeader1">27/10/2021</h5>
+                            <svg
+                              class="PrevCardWaveDiv"
+                              viewBox="0 0 1920 200"
+                              xmlns="http://www.w3.org/2000/svg"
+                              style="transform: rotateX(180deg)"
+                            >
+                              <path
+                                d="M 0 65 C 151 65 151 17 302 17 L 302 17 L 302 0 L 0 0 Z M 301 17 C 463.5 17 463.5 100 626 100 L 626 100 L 626 0 L 301 0 Z M 625 100 C 789 100 789 30 953 30 L 953 30 L 953 0 L 625 0 Z M 952 30 C 1093.5 30 1093.5 103 1235 103 L 1235 103 L 1235 0 L 952 0 Z M 1234 103 C 1402 103 1402 20 1570 20 L 1570 20 L 1570 0 L 1234 0 Z M 1569 20 C 1744.5 20 1744.5 85 1920 85 L 1920 85 L 1920 0 L 1569 0 Z"
+                                stroke-width="0"
+                                style="fill: #2690a8"
+                              />
+                            </svg>
+                          </div>
+                          <div class="PrevcardBottom">
+                            <h1 class="PrevCardBody">
+                              O nível poderá atingir <span id="prevLevel1">4 m</span>
+                            </h1>
+                          </div>
+                        </div>
+                        <div class="prevCard">
+                          <div class="PrevcardTop PrevcardTop2">
+                            <h3 class="PrevCardHeader PrevCardHeader2">Amanhã</h3>
+                            <h5 class="PrevCardSubHeader PrevCardSubHeader2">27/10/2021</h5>
+                            <svg
+                              class="PrevCardWaveDiv"
+                              viewBox="0 0 1920 200"
+                              xmlns="http://www.w3.org/2000/svg"
+                              style="transform: rotateX(180deg)"
+                            >
+                              <path
+                                d="M 0 65 C 151 65 151 17 302 17 L 302 17 L 302 0 L 0 0 Z M 301 17 C 463.5 17 463.5 100 626 100 L 626 100 L 626 0 L 301 0 Z M 625 100 C 789 100 789 30 953 30 L 953 30 L 953 0 L 625 0 Z M 952 30 C 1093.5 30 1093.5 103 1235 103 L 1235 103 L 1235 0 L 952 0 Z M 1234 103 C 1402 103 1402 20 1570 20 L 1570 20 L 1570 0 L 1234 0 Z M 1569 20 C 1744.5 20 1744.5 85 1920 85 L 1920 85 L 1920 0 L 1569 0 Z"
+                                stroke-width="0"
+                                style="fill: #2690a8"
+                              />
+                            </svg>
+                          </div>
+                          <div class="PrevcardBottom">
+                            <h1 class="PrevCardBody">
+                              O nível poderá atingir <span id="prevLevel2">4 m</span>
+                            </h1>
+                          </div>
+                        </div>
+                        <div class="prevCard">
+                          <div class="PrevcardTop PrevcardTop3">
+                            <h3 class="PrevCardHeader PrevCardHeader3">Amanhã</h3>
+                            <h5 class="PrevCardSubHeader PrevCardSubHeader3">27/10/2021</h5>
+                            <svg
+                              class="PrevCardWaveDiv"
+                              viewBox="0 0 1920 200"
+                              xmlns="http://www.w3.org/2000/svg"
+                              style="transform: rotateX(180deg)"
+                            >
+                              <path
+                                d="M 0 65 C 151 65 151 17 302 17 L 302 17 L 302 0 L 0 0 Z M 301 17 C 463.5 17 463.5 100 626 100 L 626 100 L 626 0 L 301 0 Z M 625 100 C 789 100 789 30 953 30 L 953 30 L 953 0 L 625 0 Z M 952 30 C 1093.5 30 1093.5 103 1235 103 L 1235 103 L 1235 0 L 952 0 Z M 1234 103 C 1402 103 1402 20 1570 20 L 1570 20 L 1570 0 L 1234 0 Z M 1569 20 C 1744.5 20 1744.5 85 1920 85 L 1920 85 L 1920 0 L 1569 0 Z"
+                                stroke-width="0"
+                                style="fill: #2690a8"
+                              />
+                            </svg>
+                          </div>
+                          <div class="PrevcardBottom">
+                            <h1 class="PrevCardBody">
+                              O nível poderá atingir <span id="prevLevel3">4 m</span>
+                            </h1>
+                          </div>
+                        </div>
+                        <div class="prevCard">
+                          <div class="PrevcardTop PrevcardTop4">
+                            <h3 class="PrevCardHeader PrevCardHeader4">Amanhã</h3>
+                            <h5 class="PrevCardSubHeader PrevCardSubHeader4">27/10/2021</h5>
+                            <svg
+                              class="PrevCardWaveDiv"
+                              viewBox="0 0 1920 200"
+                              xmlns="http://www.w3.org/2000/svg"
+                              style="transform: rotateX(180deg)"
+                            >
+                              <path
+                                d="M 0 65 C 151 65 151 17 302 17 L 302 17 L 302 0 L 0 0 Z M 301 17 C 463.5 17 463.5 100 626 100 L 626 100 L 626 0 L 301 0 Z M 625 100 C 789 100 789 30 953 30 L 953 30 L 953 0 L 625 0 Z M 952 30 C 1093.5 30 1093.5 103 1235 103 L 1235 103 L 1235 0 L 952 0 Z M 1234 103 C 1402 103 1402 20 1570 20 L 1570 20 L 1570 0 L 1234 0 Z M 1569 20 C 1744.5 20 1744.5 85 1920 85 L 1920 85 L 1920 0 L 1569 0 Z"
+                                stroke-width="0"
+                                style="fill: #2690a8"
+                              />
+                            </svg>
+                          </div>
+                          <div class="PrevcardBottom">
+                            <h1 class="PrevCardBody">
+                              O nível poderá atingir <span id="prevLevel4">4 m</span>
+                            </h1>
+                          </div>
+                        </div>
+                        <div class="prevCard">
+                          <div class="PrevcardTop PrevcardTop5">
+                            <h3 class="PrevCardHeader PrevCardHeader5">Amanhã</h3>
+                            <h5 class="PrevCardSubHeader PrevCardSubHeader5">27/10/2021</h5>
+                            <svg
+                              class="PrevCardWaveDiv"
+                              viewBox="0 0 1920 200"
+                              xmlns="http://www.w3.org/2000/svg"
+                              style="transform: rotateX(180deg)"
+                            >
+                              <path
+                                d="M 0 65 C 151 65 151 17 302 17 L 302 17 L 302 0 L 0 0 Z M 301 17 C 463.5 17 463.5 100 626 100 L 626 100 L 626 0 L 301 0 Z M 625 100 C 789 100 789 30 953 30 L 953 30 L 953 0 L 625 0 Z M 952 30 C 1093.5 30 1093.5 103 1235 103 L 1235 103 L 1235 0 L 952 0 Z M 1234 103 C 1402 103 1402 20 1570 20 L 1570 20 L 1570 0 L 1234 0 Z M 1569 20 C 1744.5 20 1744.5 85 1920 85 L 1920 85 L 1920 0 L 1569 0 Z"
+                                stroke-width="0"
+                                style="fill: #2690a8"
+                              />
+                            </svg>
+                          </div>
+                          <div class="PrevcardBottom">
+                            <h1 class="PrevCardBody">
+                              O nível poderá atingir <span id="prevLevel5">4 m</span>
+                            </h1>
+                          </div>
+                        </div>
+                        <div class="prevCard">
+                          <div class="PrevcardTop PrevcardTop6">
+                            <h3 class="PrevCardHeader PrevCardHeader6">Amanhã</h3>
+                            <h5 class="PrevCardSubHeader PrevCardSubHeader6">27/10/2021</h5>
+                            <svg
+                              class="PrevCardWaveDiv"
+                              viewBox="0 0 1920 200"
+                              xmlns="http://www.w3.org/2000/svg"
+                              style="transform: rotateX(180deg)"
+                            >
+                              <path
+                                d="M 0 65 C 151 65 151 17 302 17 L 302 17 L 302 0 L 0 0 Z M 301 17 C 463.5 17 463.5 100 626 100 L 626 100 L 626 0 L 301 0 Z M 625 100 C 789 100 789 30 953 30 L 953 30 L 953 0 L 625 0 Z M 952 30 C 1093.5 30 1093.5 103 1235 103 L 1235 103 L 1235 0 L 952 0 Z M 1234 103 C 1402 103 1402 20 1570 20 L 1570 20 L 1570 0 L 1234 0 Z M 1569 20 C 1744.5 20 1744.5 85 1920 85 L 1920 85 L 1920 0 L 1569 0 Z"
+                                stroke-width="0"
+                                style="fill: #2690a8"
+                              />
+                            </svg>
+                          </div>
+                          <div class="PrevcardBottom">
+                            <h1 class="PrevCardBody">
+                              O nível poderá atingir <span id="prevLevel6">4 m</span>
+                            </h1>
+                          </div>
+                        </div>
+                        <div class="prevCard">
+                          <div class="PrevcardTop PrevcardTop7">
+                            <h3 class="PrevCardHeader PrevCardHeader7">Amanhã</h3>
+                            <h5 class="PrevCardSubHeader PrevCardSubHeader7">27/10/2021</h5>
+                            <svg
+                              class="PrevCardWaveDiv"
+                              viewBox="0 0 1920 200"
+                              xmlns="http://www.w3.org/2000/svg"
+                              style="transform: rotateX(180deg)"
+                            >
+                              <path
+                                d="M 0 65 C 151 65 151 17 302 17 L 302 17 L 302 0 L 0 0 Z M 301 17 C 463.5 17 463.5 100 626 100 L 626 100 L 626 0 L 301 0 Z M 625 100 C 789 100 789 30 953 30 L 953 30 L 953 0 L 625 0 Z M 952 30 C 1093.5 30 1093.5 103 1235 103 L 1235 103 L 1235 0 L 952 0 Z M 1234 103 C 1402 103 1402 20 1570 20 L 1570 20 L 1570 0 L 1234 0 Z M 1569 20 C 1744.5 20 1744.5 85 1920 85 L 1920 85 L 1920 0 L 1569 0 Z"
+                                stroke-width="0"
+                                style="fill: #2690a8"
+                              />
+                            </svg>
+                          </div>
+                          <div class="PrevcardBottom">
+                            <h1 class="PrevCardBody">
+                              O nível poderá atingir <span id="prevLevel7">4 m</span>
+                            </h1>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="r4" class="justify-content-center">
+      <div class="p-0">
+        <div class="accordion border-0" id="accordionQ">
+          <div class="accordion-item border-0">
+            <h2 class="accordion-header" id="headingOne">
+              <button
+                class="QA-button"
+                id="QA-button-1"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseOne"
+                aria-expanded="true"
+                aria-controls="collapseOne"
+              >
+                Como realizamos as previsões?
+                <span><img id="arrow" draggable="false" src="arrow.png" alt="" srcset="" /></span>
+              </button>
+            </h2>
+            <div
+              id="collapseOne"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingOne"
+              data-bs-parent="#accordionQ"
+            >
+              <div class="accordion-body">
+                <span class="text-xs-center" id="QA-1"
+                  >Utilizamos modelos de inteligencia artificial para prever com
+                  precisão o nível do rio para os próximos 7 dias</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="r4" class="justify-content-center text-center">
+      <div class="p-0 m-0">
+        <div class="container-fluid p-0 position-relative">
+          <h2 class="text-center" id="title3">Mande um oi pra gente!</h2>
+          <h2 id="content4">
+            itallolobo1@gmail.com
+          </h2>
+        </div>
+      </div>
+    </div>
+
+    <div
+      id="r4"
+      class="justify-content-center text-center position-relative"
+      style="background-color: #2690A8"
+    >
+      <h3 id="footer">Desenvolvido por Itallo</h3>
+      <div>
+        <svg viewBox="-0.14 913.516 1612.157 211.808" xmlns="http://www.w3.org/2000/svg" xmlns:bx="https://boxy-svg.com">
+          <g  transform="matrix(1.000201, -0.00041, 0.000293, 0.714478, -0.309537, 261.129738)" bx:origin="0.499974 1.000383">
+            <title>Layer 1</title>
+            <g id="svg_7">
+              <path id="svg_4" d="M 1.101 1121.41 L 0.014 1008.784 C 0.014 1008.784 74.466 955.181 161.297 998.497 C 248.128 1041.814 245.327 1073.317 337.76 1067.41 C 430.193 1061.503 435.795 996.528 522.627 1028.031 C 609.458 1059.534 690.687 1106.789 746.707 1096.944 C 802.727 1087.099 1203.271 917.771 1374.133 927.616 C 1544.994 937.46 1603.815 898.082 1602.695 929.978 C 1601.574 961.875 1598.213 1124.509 1597.092 1122.934 C 1595.972 1121.359 2.186 1121.374 2.186 1121.374 L 0.041 1121.373 L 1.101 1121.41 Z" stroke-width="0" stroke="#000000" fill="#ce9561"/>
+              <path id="svg_5" d="M -0.058 1195.87 L -0.009 1034.036 C -0.009 1034.036 67.535 1030.677 154.732 1091.703 C 241.929 1152.728 244.742 1072.286 337.565 1063.964 C 430.389 1055.642 433.202 1066.736 520.398 1111.12 C 607.597 1155.504 742.611 1055.642 798.868 1041.773 C 855.124 1027.903 1215.165 977.973 1386.746 991.843 C 1558.33 1005.713 1609.359 879.983 1610.648 923.049 C 1611.217 942.066 1609.843 1086.091 1609.678 1138.386 C 1609.454 1209.26 1608.844 1188.532 1610.559 1194.843 C 1603.896 1192.672 0.027 1197.111 -0.057 1197.13 L -0.056 1195.875 L -0.021 1125.838 L -0.058 1195.87 Z" stroke-width="0" stroke="#000000" fill="#bc8e65"/>
+            </g>
+          </g>
+          <rect x="1607.106" y="913.909" width="4.836" height="200.113" style="fill: rgb(188, 142, 101);"/>
+          <rect x="-0.14" y="1108.341" width="1612.157" height="16.983" style="fill: rgb(188, 142, 101);"/>
+        </svg>
+       </div>
+       <div id="footer-bottom"></div>
+    </div>
+
+    <script>
+      $("#accordionQ").on("show.bs.collapse", function () {
+        $("#arrow").addClass("rotated");
+      });
+
+      $("#accordionQ").on("hide.bs.collapse", function () {
+        $("#arrow").removeClass("rotated");
+      });
+      $("#infoBtn").on("click", function (e) {
+        $(".slick-slider").slick("refresh");
+      });
+      $(".PrevCarousel").slick({
+        dots: true,
+        infinite: false,
+        speed: 300,
+        ars: true,
+        slidesToScroll: 1,
+        slidesToShow: 3,
+        responsive: [
+          {
+            breakpoint: 1300,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 1,
+            },
+          },
+          {
+            breakpoint: 1220,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1,
+            },
+          },
+          {
+            breakpoint: 800,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+            },
+          },
+          {
+            breakpoint: 1,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+            },
+          },
+          // You can unslick at a given breakpoint now by adding:
+          // settings: "unslick"
+          // instead of a settings object
+        ],
+      });
+      $("#w0").wavify({
+        height: 10,
+        bones: 4,
+        amplitude: 40,
+        color: "#40b3db",
+        speed: 0.1,
+      });
+    </script>
+    
+  </body>
+</html>

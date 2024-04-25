@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="0 35.122 143.403 1875.512" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #ff6962;
+        stroke: #000;
+        stroke-width: 1px;
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        fill: none;
+      }
+
+      .cls-2, .cls-3 {
+        stroke: #3a3a3a;
+        stroke-width: 15px;
+      }
+
+      .cls-3 {
+        fill: #319fbc;
+        stroke-linejoin: round;
+      }
+    </style>
+  </defs>
+  <path id="fundo" class="cls-1" d="M30.9,43.651h82.466a14,14,0,0,1,14,14V1879a14,14,0,0,1-14,14H30.9a14,14,0,0,1-14-14V57.651A14,14,0,0,1,30.9,43.651Z"/>
+  <path id="traçado" class="cls-2" d="M30.895,47.647h82.466a14,14,0,0,1,14,14V1883a14,14,0,0,1-14,14H30.895a14,14,0,0,1-14-14V61.647A14,14,0,0,1,30.895,47.647Z"/>
+  <path id="Linha_1" data-name="Linha 1" class="cls-3" d="M125,219v1H60v-1h65Z"/>
+  <path id="Linha_1-2" data-name="Linha 1" class="cls-3" d="M125,1097v1H60v-1h65Z"/>
+  <path id="Linha_1-3" data-name="Linha 1" class="cls-3" d="M125,1601v1H60v-1h65Z"/>
+  <path id="Linha_1-4" data-name="Linha 1" class="cls-3" d="M125,1727v1H60v-1h65Z"/>
+  <path id="Linha_1-5" data-name="Linha 1" class="cls-3" d="M125,1853v1H60v-1h65Z"/>
+  <path id="Linha_1-6" data-name="Linha 1" class="cls-3" d="M125,1475v1H60v-1h65Z"/>
+  <path id="Linha_1-7" data-name="Linha 1" class="cls-3" d="M125,471v1H60v-1h65Z"/>
+  <path id="Linha_1-8" data-name="Linha 1" class="cls-3" d="M125,1223v1H60v-1h65Z"/>
+  <path id="Linha_1-9" data-name="Linha 1" class="cls-3" d="M125,1349v1H60v-1h65Z"/>
+  <path id="Linha_1-10" data-name="Linha 1" class="cls-3" d="M125,971v1H60v-1h65Z"/>
+  <path id="Linha_1-11" data-name="Linha 1" class="cls-3" d="M125,346v1H60v-1h65Z"/>
+  <path id="Linha_1-12" data-name="Linha 1" class="cls-3" d="M125,596v1H60v-1h65Z"/>
+  <path id="Linha_1-13" data-name="Linha 1" class="cls-3" d="M125,722v1H60v-1h65Z"/>
+  <path id="Linha_1-14" data-name="Linha 1" class="cls-3" d="M125,847v1H60v-1h65Z"/>
+  <path id="Linha_1-15" data-name="Linha 1" class="cls-3" d="M125,93v1H60V93h65Z"/>
+  <path id="Linha_2" data-name="Linha 2" class="cls-3" d="M120,909v1H84v-1h36Z"/>
+  <path id="Linha_2-2" data-name="Linha 2" class="cls-3" d="M120,784v1H84v-1h36Z"/>
+  <path id="Linha_2-3" data-name="Linha 2" class="cls-3" d="M120,1287v1H84v-1h36Z"/>
+  <path id="Linha_2-4" data-name="Linha 2" class="cls-3" d="M118,534v1H82v-1h36Z"/>
+  <path id="Linha_2-5" data-name="Linha 2" class="cls-3" d="M118,283v1H82v-1h36Z"/>
+  <path id="Linha_2-6" data-name="Linha 2" class="cls-3" d="M118,1035v1H82v-1h36Z"/>
+  <path id="Linha_2-7" data-name="Linha 2" class="cls-3" d="M118,1161v1H82v-1h36Z"/>
+  <path id="Linha_2-8" data-name="Linha 2" class="cls-3" d="M118,658v1H82v-1h36Z"/>
+  <path id="Linha_2-9" data-name="Linha 2" class="cls-3" d="M118,407v1H82v-1h36Z"/>
+  <path id="Linha_2-10" data-name="Linha 2" class="cls-3" d="M118,157v1H82v-1h36Z"/>
+  <path id="Linha_2-11" data-name="Linha 2" class="cls-3" d="M118,1413v1H82v-1h36Z"/>
+  <path id="Linha_2-12" data-name="Linha 2" class="cls-3" d="M118,1664v1H82v-1h36Z"/>
+  <path id="Linha_2-13" data-name="Linha 2" class="cls-3" d="M118,1790v1H82v-1h36Z"/>
+  <path id="Linha_2-14" data-name="Linha 2" class="cls-3" d="M118,1538v1H82v-1h36Z"/>
+</svg>
